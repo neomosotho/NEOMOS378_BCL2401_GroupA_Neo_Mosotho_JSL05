@@ -1,49 +1,38 @@
 # [JSL05] Submission: Galaxy Playlist Generator
 
-You will:
-1. Use the provided Starter Code Repository: https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
-2. Code your solution.
-3. Commit changes to your GitHub repository.
-4. Submit the GitHub Repository Link to the LMS [JSL05] Submission Project Tab.
-
-Check out the practice challenges on Scrimba here: https://scrimba.com/playlist/pXXzN5GT6
-
 ### Galaxy Playlist Generator
 
-In this challenge, you'll combine your knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. Your task is to filter and organize songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
+## Overview:
+In this project I combined my knowledge of JavaScript arrays and the `map()` function to create a personalized "Awesome Mix" playlist for each of the Guardians of the Galaxy. I filtered and organized songs based on each Guardian's musical preference, displaying a playlist tailored just for them.
 
-![alt text](JSL05_solution.png)
+# Guardians' Playlist Generator
 
-#### Instructions:
+This script generates playlists for each Guardian of the Galaxy based on their preferred music genre.
 
-1. **Expand the Songs Array**: Add at least five songs to the `songs` array, each with `title`, `artist`, and `genre`.
-2. **Assign Preferences**: Complete the `guardians` object by assigning each Guardian their preferred music genre.
-3. **Generate Playlists**: Implement the `generatePlaylist` function. Use the `map()` function to create a personalized playlist for each Guardian based on their genre preference.
-4. **Display Playlists**: Dynamically create and append elements to the `#playlists` div to display each Guardian's playlist. Include the Guardian's name and their list of songs.
-5. **Test Your Application**: Ensure that your application correctly filters songs by genre for each Guardian and displays the playlists on the web page.
+## How it Works
 
-## What You Need to Do:
+### 1. Songs Array
 
-1. Clone the provided Starter Code Repository to your local development environment (e.g., VSCode): https://github.com/CodeSpace-Academy/Module_5_StudentNo_Classcode_Group_Name-Surname_JSL05
-2. Open the cloned project in your code editor.
-3. Code your solution for each of the challenges as per the provided instructions.
-4. Commit your changes to your local Git repository with meaningful commit messages.
-5. Push your local Git repository to your GitHub account.
-6. Verify that the changes have been successfully pushed to your GitHub repository.
+The script contains an array called `songs` which includes various songs with properties like title, artist, and genre.
 
-## What You Need to Include:
+### 2. Guardians' Preferences
 
-1. Ensure that your code includes the necessary modifications to meet the challenge requirements.
-2. Your GitHub repository should contain the updated code files.
+It also defines an object called `guardians` which holds the preferred genre of each Guardian. Initially, it includes preferences for Star-Lord and Gamora. Later, preferences for Drax, Rocket, and Groot are added.
 
-## How We'll Assess Your Work:
+### 3. Playlist Generation
 
-1. We will review your GitHub repository to ensure that it contains the updated code files.
-2. We will assess the modifications made to the code to verify that they effectively meet the challenge requirements.
-3. We will consider the commit history and meaningful commit messages to evaluate your coding process.
+The `generatePlaylist` function is responsible for generating playlists for each Guardian. It uses the `map()` function to iterate over each Guardian's preferred genre and filters the songs based on that genre. Then, it calls the `displayPlaylists` function to display the playlists.
 
-This challenge will test your ability to manipulate arrays and objects, use the `map()` function for data transformation, and dynamically update the DOM based on data. Good luck, and may your mix be truly awesome!
+### 4. Displaying Playlists
 
+The `displayPlaylists` function creates HTML elements for playlists and appends them to the HTML document. It receives a Guardian's name and their corresponding playlist as arguments, then creates a container for the playlist and appends each song title along with its artist to the container.
+
+## Usage
+
+To generate and display the playlists, simply call the `generatePlaylist` function with the `guardians` and `songs` arrays as arguments.
+
+```javascript
+generatePlaylist(guardians, songs);
 
 
 
