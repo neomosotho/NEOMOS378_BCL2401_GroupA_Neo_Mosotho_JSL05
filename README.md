@@ -34,6 +34,13 @@ To generate and display the playlists, simply call the `generatePlaylist` functi
 ```javascript
 generatePlaylist(guardians, songs);
 
+## Challenges:
+I experienced problems when I had to add the classes for styling. Initially I had added them as lists(li) and that did not come out the way I wanted it to. 
+So I ended up adding them as ('span', 'p').
+
+## Feedback
+Overall, I enjoyed this project and I learned a lot from doing it.
+
 
 
 
